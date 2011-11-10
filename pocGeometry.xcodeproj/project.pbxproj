@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E3C714F146B110500C3F7C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3C714E146B110500C3F7C4 /* UIKit.framework */; };
+		8E3C7151146B110500C3F7C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3C7150146B110500C3F7C4 /* Foundation.framework */; };
+		8E3C7153146B110500C3F7C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3C7152146B110500C3F7C4 /* CoreGraphics.framework */; };
+		8E3C7159146B110500C3F7C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E3C7157146B110500C3F7C4 /* InfoPlist.strings */; };
+		8E3C715B146B110500C3F7C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C715A146B110500C3F7C4 /* main.m */; };
+		8E3C715F146B110500C3F7C4 /* pocGeometryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C715E146B110500C3F7C4 /* pocGeometryAppDelegate.m */; };
+		8E3C7167146B125100C3F7C4 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C7166146B125100C3F7C4 /* CanvasViewController.m */; };
+		8E3C716A146B34B000C3F7C4 /* CanvasView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3C7169146B34B000C3F7C4 /* CanvasView.xib */; };
+		8E3C716D146B3B0700C3F7C4 /* RKURulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C716C146B3B0700C3F7C4 /* RKURulerView.m */; };
+		8E4242CA146BA93B00B3E0E6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4242C9146BA93B00B3E0E6 /* QuartzCore.framework */; };
+		8E49B94B146C241600F8B0C8 /* RKUGuidesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E49B94A146C241600F8B0C8 /* RKUGuidesView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E3C714A146B110500C3F7C4 /* pocGeometry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pocGeometry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3C714E146B110500C3F7C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8E3C7150146B110500C3F7C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8E3C7152146B110500C3F7C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8E3C7156146B110500C3F7C4 /* pocGeometry-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pocGeometry-Info.plist"; sourceTree = "<group>"; };
+		8E3C7158146B110500C3F7C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E3C715A146B110500C3F7C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E3C715C146B110500C3F7C4 /* pocGeometry-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pocGeometry-Prefix.pch"; sourceTree = "<group>"; };
+		8E3C715D146B110500C3F7C4 /* pocGeometryAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pocGeometryAppDelegate.h; sourceTree = "<group>"; };
+		8E3C715E146B110500C3F7C4 /* pocGeometryAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pocGeometryAppDelegate.m; sourceTree = "<group>"; };
+		8E3C7165146B125100C3F7C4 /* CanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		8E3C7166146B125100C3F7C4 /* CanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		8E3C7169146B34B000C3F7C4 /* CanvasView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CanvasView.xib; sourceTree = "<group>"; };
+		8E3C716B146B3B0700C3F7C4 /* RKURulerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKURulerView.h; sourceTree = "<group>"; };
+		8E3C716C146B3B0700C3F7C4 /* RKURulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKURulerView.m; sourceTree = "<group>"; };
+		8E4242C9146BA93B00B3E0E6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8E49B949146C241600F8B0C8 /* RKUGuidesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKUGuidesView.h; sourceTree = "<group>"; };
+		8E49B94A146C241600F8B0C8 /* RKUGuidesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKUGuidesView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E3C7147146B110500C3F7C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E4242CA146BA93B00B3E0E6 /* QuartzCore.framework in Frameworks */,
+				8E3C714F146B110500C3F7C4 /* UIKit.framework in Frameworks */,
+				8E3C7151146B110500C3F7C4 /* Foundation.framework in Frameworks */,
+				8E3C7153146B110500C3F7C4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E3C713F146B110500C3F7C4 = {
+			isa = PBXGroup;
+			children = (
+				8E4242C9146BA93B00B3E0E6 /* QuartzCore.framework */,
+				8E3C7154146B110500C3F7C4 /* pocGeometry */,
+				8E3C714D146B110500C3F7C4 /* Frameworks */,
+				8E3C714B146B110500C3F7C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E3C714B146B110500C3F7C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E3C714A146B110500C3F7C4 /* pocGeometry.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E3C714D146B110500C3F7C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E3C714E146B110500C3F7C4 /* UIKit.framework */,
+				8E3C7150146B110500C3F7C4 /* Foundation.framework */,
+				8E3C7152146B110500C3F7C4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E3C7154146B110500C3F7C4 /* pocGeometry */ = {
+			isa = PBXGroup;
+			children = (
+				8E3C715D146B110500C3F7C4 /* pocGeometryAppDelegate.h */,
+				8E3C715E146B110500C3F7C4 /* pocGeometryAppDelegate.m */,
+				8E3C7155146B110500C3F7C4 /* Supporting Files */,
+				8E3C7165146B125100C3F7C4 /* CanvasViewController.h */,
+				8E3C7166146B125100C3F7C4 /* CanvasViewController.m */,
+				8E3C7168146B14AB00C3F7C4 /* View */,
+			);
+			path = pocGeometry;
+			sourceTree = "<group>";
+		};
+		8E3C7155146B110500C3F7C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E3C7156146B110500C3F7C4 /* pocGeometry-Info.plist */,
+				8E3C7157146B110500C3F7C4 /* InfoPlist.strings */,
+				8E3C715A146B110500C3F7C4 /* main.m */,
+				8E3C715C146B110500C3F7C4 /* pocGeometry-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E3C7168146B14AB00C3F7C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E3C7169146B34B000C3F7C4 /* CanvasView.xib */,
+				8E3C716B146B3B0700C3F7C4 /* RKURulerView.h */,
+				8E3C716C146B3B0700C3F7C4 /* RKURulerView.m */,
+				8E49B949146C241600F8B0C8 /* RKUGuidesView.h */,
+				8E49B94A146C241600F8B0C8 /* RKUGuidesView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E3C7149146B110500C3F7C4 /* pocGeometry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E3C7162146B110500C3F7C4 /* Build configuration list for PBXNativeTarget "pocGeometry" */;
+			buildPhases = (
+				8E3C7146146B110500C3F7C4 /* Sources */,
+				8E3C7147146B110500C3F7C4 /* Frameworks */,
+				8E3C7148146B110500C3F7C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pocGeometry;
+			productName = pocGeometry;
+			productReference = 8E3C714A146B110500C3F7C4 /* pocGeometry.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E3C7141146B110500C3F7C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Emlink;
+			};
+			buildConfigurationList = 8E3C7144146B110500C3F7C4 /* Build configuration list for PBXProject "pocGeometry" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E3C713F146B110500C3F7C4;
+			productRefGroup = 8E3C714B146B110500C3F7C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E3C7149146B110500C3F7C4 /* pocGeometry */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E3C7148146B110500C3F7C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E3C7159146B110500C3F7C4 /* InfoPlist.strings in Resources */,
+				8E3C716A146B34B000C3F7C4 /* CanvasView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E3C7146146B110500C3F7C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E3C715B146B110500C3F7C4 /* main.m in Sources */,
+				8E3C715F146B110500C3F7C4 /* pocGeometryAppDelegate.m in Sources */,
+				8E3C7167146B125100C3F7C4 /* CanvasViewController.m in Sources */,
+				8E3C716D146B3B0700C3F7C4 /* RKURulerView.m in Sources */,
+				8E49B94B146C241600F8B0C8 /* RKUGuidesView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E3C7157146B110500C3F7C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E3C7158146B110500C3F7C4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E3C7160146B110500C3F7C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		8E3C7161146B110500C3F7C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E3C7163146B110500C3F7C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pocGeometry/pocGeometry-Prefix.pch";
+				INFOPLIST_FILE = "pocGeometry/pocGeometry-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8E3C7164146B110500C3F7C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "pocGeometry/pocGeometry-Prefix.pch";
+				INFOPLIST_FILE = "pocGeometry/pocGeometry-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E3C7144146B110500C3F7C4 /* Build configuration list for PBXProject "pocGeometry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E3C7160146B110500C3F7C4 /* Debug */,
+				8E3C7161146B110500C3F7C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E3C7162146B110500C3F7C4 /* Build configuration list for PBXNativeTarget "pocGeometry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E3C7163146B110500C3F7C4 /* Debug */,
+				8E3C7164146B110500C3F7C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E3C7141146B110500C3F7C4 /* Project object */;
+}
