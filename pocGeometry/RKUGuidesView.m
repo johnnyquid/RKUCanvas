@@ -10,7 +10,7 @@
 
 @implementation RKUGuidesView
 
-- (id)initWithFrame:(CGRect)frame andCoordinates:(NSArray *)coordinates {
+- (id)initWithFrame:(CGRect)frame andStartCoordinates:(NSArray *)startCoordinates andEndCoordinates:(NSArray *)endCoordinates {
 
 	self = [super initWithFrame:frame];
 

@@ -10,6 +10,6 @@
 
 @interface RKUGuidesView : UIView
 
-- (id)initWithFrame:(CGRect)frame andCoordinates:(NSArray *)coordinates;
+- (id)initWithFrame:(CGRect)frame andStartCoordinates:(NSArray *)startCoordinates andEndCoordinates:(NSArray *)endCoordinates;
 
 @end

@@ -17,7 +17,8 @@
 	RKURulerView *verticalRulerView;
 	RKURulerView *horizontalRulerView;
 
-	NSMutableArray *canvasGuidesCoordinates;
+	NSMutableArray *canvasStartGuidesCoordinates;
+	NSMutableArray *canvasEndGuidesCoordinates;
 }
 
 

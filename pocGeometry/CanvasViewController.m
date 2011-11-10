@@ -56,6 +56,33 @@
 }
 
 
+- (void)setGuidesSource {
+
+	NSValue *firstGuideStart = [NSValue valueWithCGPoint:CGPointMake(0.0f, 100.0f)];
+	NSValue *firstGuideEnd = [NSValue valueWithCGPoint:CGPointMake(prescriptionView.frame.size.width, 100.0f)];
+
+	NSValue *secondGuideStart = [NSValue valueWithCGPoint:CGPointMake(0.0f, 200.0f)];
+	NSValue *secondGuideEnd = [NSValue valueWithCGPoint:CGPointMake(prescriptionView.frame.size.width, 200.0f)];
+
+	NSValue *thirdGuideStart = [NSValue valueWithCGPoint:CGPointMake(0.0f, 300.0f)];
+	NSValue *thirdGuideEnd = [NSValue valueWithCGPoint:CGPointMake(prescriptionView.frame.size.width, 300.0f)];
+
+	NSValue *fourthGuideStart = [NSValue valueWithCGPoint:CGPointMake(0.0f, 400.0f)];
+	NSValue *fourthGuideEnd = [NSValue valueWithCGPoint:CGPointMake(prescriptionView.frame.size.width, 400.0f)];
+
+	NSValue *fifthGuideStart = [NSValue valueWithCGPoint:CGPointMake(200.0f, 0.0f)];
+	NSValue *fifthGuideEnd = [NSValue valueWithCGPoint:CGPointMake(200.0f, prescriptionView.frame.size.height)];
+
+	NSValue *sixthGuideStart = [NSValue valueWithCGPoint:CGPointMake(400.0f, 0.0)];
+	NSValue *sixthGuideEnd = [NSValue valueWithCGPoint:CGPointMake(400.0f, prescriptionView.frame.size.height)];
+
+	canvasStartGuidesCoordinates = [[NSMutableArray alloc] initWithObjects:firstGuideStart, secondGuideStart, thirdGuideStart, fourthGuideStart, fifthGuideStart, sixthGuideStart, nil];
+	
+	canvasStartGuidesCoordinates = [[NSMutableArray alloc] initWithObjects:firstGuideEnd, secondGuideEnd, thirdGuideEnd, fourthGuideEnd, fifthGuideEnd, sixthGuideEnd, nil];
+	
+}
+
+
 - (void)setRulers {
 
 	verticalRulerView = [[RKURulerView alloc] initWithFrame:CGRectMake(prescriptionView.frame.size.width + prescriptionView.frame.origin.x + 30 , prescriptionView.frame.origin.y - 20, 20, prescriptionView.frame.size.height)];
