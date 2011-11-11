@@ -18,6 +18,7 @@
 		8E3C716D146B3B0700C3F7C4 /* RKURulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3C716C146B3B0700C3F7C4 /* RKURulerView.m */; };
 		8E4242CA146BA93B00B3E0E6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4242C9146BA93B00B3E0E6 /* QuartzCore.framework */; };
 		8E49B94B146C241600F8B0C8 /* RKUGuidesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E49B94A146C241600F8B0C8 /* RKUGuidesView.m */; };
+		C055F93A146CC0B600467F74 /* TextPrescriptionComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = C055F939146CC0B600467F74 /* TextPrescriptionComponent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		8E4242C9146BA93B00B3E0E6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8E49B949146C241600F8B0C8 /* RKUGuidesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKUGuidesView.h; sourceTree = "<group>"; };
 		8E49B94A146C241600F8B0C8 /* RKUGuidesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKUGuidesView.m; sourceTree = "<group>"; };
+		C055F938146CC0B600467F74 /* TextPrescriptionComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextPrescriptionComponent.h; path = ../TextPrescriptionComponent.h; sourceTree = "<group>"; };
+		C055F939146CC0B600467F74 /* TextPrescriptionComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextPrescriptionComponent.m; path = ../TextPrescriptionComponent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				8E3C7157146B110500C3F7C4 /* InfoPlist.strings */,
 				8E3C715A146B110500C3F7C4 /* main.m */,
 				8E3C715C146B110500C3F7C4 /* pocGeometry-Prefix.pch */,
+				C055F939146CC0B600467F74 /* TextPrescriptionComponent.m */,
+				C055F938146CC0B600467F74 /* TextPrescriptionComponent.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 				8E3C7167146B125100C3F7C4 /* CanvasViewController.m in Sources */,
 				8E3C716D146B3B0700C3F7C4 /* RKURulerView.m in Sources */,
 				8E49B94B146C241600F8B0C8 /* RKUGuidesView.m in Sources */,
+				C055F93A146CC0B600467F74 /* TextPrescriptionComponent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
