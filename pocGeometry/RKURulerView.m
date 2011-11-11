@@ -10,6 +10,8 @@
 
 @implementation RKURulerView
 
+@synthesize isLandscape = _isLandscape;
+
 - (id)initWithFrame:(CGRect)frame {
 
 	self = [super initWithFrame:frame];
@@ -25,19 +27,27 @@
 
 - (void)drawRect:(CGRect)rect {
 
-	if (isLandscape) {
+	if (_isLandscape) {
+
+		CGFloat mainMeasure = 56.8f;
+		NSInteger numberOfSections = (self.frame.size.width / mainMeasure);
+		CGFloat xPosition = mainMeasure;
 
 		CGContextRef context = UIGraphicsGetCurrentContext();
 		
-		//Draw Lines
-		CGFloat purple[4] = {0.4f, 0.4f, 0.4f, 0.4f};
-		CGContextSetStrokeColor(context, purple);
-		CGContextBeginPath(context);
-		
-		CGContextMoveToPoint(context, 0.0f, 50.0f);
-		CGContextAddLineToPoint(context, 200.0f, 50.0f);
-		
-		CGContextStrokePath(context);
+		for (NSInteger i = 0; i < numberOfSections; i++) {
+
+			CGFloat gray[4] = {0.4f, 0.4f, 0.4f, 0.9f};
+			CGContextSetStrokeColor(context, gray);
+			CGContextBeginPath(context);
+			
+			CGContextMoveToPoint(context, xPosition, 0.0f);
+			CGContextAddLineToPoint(context, xPosition, 15.0f);
+			
+			CGContextStrokePath(context);
+			
+			xPosition += mainMeasure;
+		}
 	}
 
 	else {

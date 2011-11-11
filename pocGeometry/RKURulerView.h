@@ -9,8 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface RKURulerView : UIView
-{
-	BOOL isLandscape;
-}
+
+@property (unsafe_unretained) BOOL isLandscape;
 
 @end

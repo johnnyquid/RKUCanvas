@@ -10,13 +10,14 @@
 
 @implementation RKUGuidesView
 
-- (id)initWithFrame:(CGRect)frame andStartCoordinates:(NSArray *)startCoordinates andEndCoordinates:(NSArray *)endCoordinates {
+- (id)initWithFrame:(CGRect)frame andStartCoordinates:(NSArray *)theStartCoordinates andEndCoordinates:(NSArray *)theEndCoordinates {
 
 	self = [super initWithFrame:frame];
 
 	if (self) {
 
-		
+		startCoordinates = theStartCoordinates;
+		endCoordinates = theEndCoordinates;
     }
 
 	return self;
@@ -26,17 +27,27 @@
 - (void)drawRect:(CGRect)rect {
 
 	CGContextRef context = UIGraphicsGetCurrentContext();
+	CGFloat purple[4] = {0.9f, 0.1f, 0.8f, 0.8f};
 
-	//Draw Lines
-	CGFloat purple[4] = {0.9f, 0.1f, 0.8f, 0.4f};
-	CGContextSetStrokeColor(context, purple);
-	CGContextBeginPath(context);
-	
-	CGContextMoveToPoint(context, 0.0f, 100.0f);
-	CGContextAddLineToPoint(context, [self frame].size.width, 100.0f);
-	
-	CGContextStrokePath(context);
+	for (NSInteger i = 0; i < [startCoordinates count]; i++) {
+
+		CGContextSetStrokeColor(context, purple);
+		CGContextBeginPath(context);
+
+		CGContextMoveToPoint(context, 
+							 ((NSValue *)[startCoordinates objectAtIndex:i]).CGPointValue.x, 
+							 ((NSValue *)[startCoordinates objectAtIndex:i]).CGPointValue.y);
+
+		CGContextAddLineToPoint(context, 
+								((NSValue *)[endCoordinates objectAtIndex:i]).CGPointValue.x, 
+								((NSValue *)[endCoordinates objectAtIndex:i]).CGPointValue.y);
+
+		CGContextStrokePath(context);
+	}
 }
 
-
+/*
+ NSValue *firstGuideStart = [NSValue valueWithCGPoint:CGPointMake(0.0f, 100.0f)];
+ NSValue *firstGuideEnd = [NSValue valueWithCGPoint:CGPointMake(prescriptionView.frame.size.width, 100.0f)];
+ */
 @end

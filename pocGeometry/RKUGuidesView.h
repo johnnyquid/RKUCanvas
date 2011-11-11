@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RKUGuidesView : UIView
+@interface RKUGuidesView : UIView {
 
-- (id)initWithFrame:(CGRect)frame andStartCoordinates:(NSArray *)startCoordinates andEndCoordinates:(NSArray *)endCoordinates;
+	NSArray *startCoordinates;
+	NSArray *endCoordinates;
+}
+
+
+- (id)initWithFrame:(CGRect)frame andStartCoordinates:(NSArray *)theStartCoordinates andEndCoordinates:(NSArray *)theEndCoordinates;
 
 @end

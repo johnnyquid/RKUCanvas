@@ -51,7 +51,7 @@
 
 	[super viewDidLoad];
 
-	[self setGuidesView];
+	[self setGuidesSource];
 	[self setRulers];
 }
 
@@ -78,24 +78,29 @@
 
 	canvasStartGuidesCoordinates = [[NSMutableArray alloc] initWithObjects:firstGuideStart, secondGuideStart, thirdGuideStart, fourthGuideStart, fifthGuideStart, sixthGuideStart, nil];
 	
-	canvasStartGuidesCoordinates = [[NSMutableArray alloc] initWithObjects:firstGuideEnd, secondGuideEnd, thirdGuideEnd, fourthGuideEnd, fifthGuideEnd, sixthGuideEnd, nil];
-	
+	canvasEndGuidesCoordinates = [[NSMutableArray alloc] initWithObjects:firstGuideEnd, secondGuideEnd, thirdGuideEnd, fourthGuideEnd, fifthGuideEnd, sixthGuideEnd, nil];
+
+	guidesView = [[RKUGuidesView alloc] initWithFrame:CGRectMake(0, 0, prescriptionView.frame.size.width + 15, prescriptionView.frame.size.height) andStartCoordinates:canvasStartGuidesCoordinates andEndCoordinates:canvasEndGuidesCoordinates];
+	[guidesView setBackgroundColor:[UIColor clearColor]];
+	[prescriptionView addSubview:guidesView];
 }
 
 
 - (void)setRulers {
 
-	verticalRulerView = [[RKURulerView alloc] initWithFrame:CGRectMake(prescriptionView.frame.size.width + prescriptionView.frame.origin.x + 30 , prescriptionView.frame.origin.y - 20, 20, prescriptionView.frame.size.height)];
+	verticalRulerView = [[RKURulerView alloc] initWithFrame:CGRectMake(prescriptionView.frame.size.width + prescriptionView.frame.origin.x + 30, 
+																	   prescriptionView.frame.origin.y - 20, 
+																	   20, 
+																	   prescriptionView.frame.size.height)];
+	
+	horizontalRulerView = [[RKURulerView alloc] initWithFrame:CGRectMake(prescriptionView.frame.origin.x, 
+																		 prescriptionView.frame.origin.y + prescriptionView.frame.size.height, 
+																		 prescriptionView.frame.size.width, 
+																		 20)];
+	[horizontalRulerView setIsLandscape:YES];
+
+	[[self view] addSubview:horizontalRulerView];
 	[[self view] addSubview:verticalRulerView];
-}
-
-
-- (void)setGuidesView {
-
-	guidesView = [[RKUGuidesView alloc] initWithFrame:CGRectMake(0, 0, prescriptionView.frame.size.width + 15, prescriptionView.frame.size.height)];
-	[guidesView setBackgroundColor:[UIColor clearColor]];
-	[guidesView setAlpha:0.6f];
-	[prescriptionView addSubview:guidesView];
 }
 
 

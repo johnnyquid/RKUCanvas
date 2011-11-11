@@ -27,7 +27,7 @@
 
 - (IBAction)printPrescription:(id)sender;
 
-- (void)setGuidesView;
+- (void)setGuidesSource;
 - (void)setRulers;
 
 @end
