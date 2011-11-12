@@ -136,16 +136,17 @@
 	verticalRulerView = [[RKURulerView alloc] initWithFrame:CGRectMake(prescriptionView.frame.size.width + prescriptionView.frame.origin.x + 30, 
 																	   prescriptionView.frame.origin.y - 20, 
 																	   20, 
-																	   prescriptionView.frame.size.height)];
+																	   prescriptionView.frame.size.height) andBool:NO];
 	
 	horizontalRulerView = [[RKURulerView alloc] initWithFrame:CGRectMake(prescriptionView.frame.origin.x, 
 																		 prescriptionView.frame.origin.y + prescriptionView.frame.size.height, 
 																		 prescriptionView.frame.size.width, 
-																		 20)];
-	[horizontalRulerView setIsLandscape:YES];
-
+																		 20) andBool:YES];
 	[[self view] addSubview:horizontalRulerView];
+	[horizontalRulerView setBackgroundColor:[UIColor whiteColor]];
+	
 	[[self view] addSubview:verticalRulerView];
+	[verticalRulerView setBackgroundColor:[UIColor whiteColor]];
 }
 
 

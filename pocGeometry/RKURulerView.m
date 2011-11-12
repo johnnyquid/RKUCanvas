@@ -10,15 +10,13 @@
 
 @implementation RKURulerView
 
-@synthesize isLandscape = _isLandscape;
-
-- (id)initWithFrame:(CGRect)frame {
+- (id)initWithFrame:(CGRect)frame andBool:(BOOL)isViewLandscape {
 
 	self = [super initWithFrame:frame];
 
 	if (self) {
 
-		self.backgroundColor = [UIColor yellowColor];
+		isLandscape = isViewLandscape;
     }
 
     return self;
@@ -27,42 +25,72 @@
 
 - (void)drawRect:(CGRect)rect {
 
-	if (_isLandscape) {
+	CGFloat mainMeasure = 28.4f;
+	NSInteger numberOfSections;
+	CGFloat gray[4] = {0.4f, 0.4f, 0.4f, 0.9f};
 
-		CGFloat mainMeasure = 56.8f;
-		NSInteger numberOfSections = (self.frame.size.width / mainMeasure);
+	if (isLandscape) {
+
+		numberOfSections = (self.frame.size.width / mainMeasure) + 1;
 		CGFloat xPosition = mainMeasure;
-
 		CGContextRef context = UIGraphicsGetCurrentContext();
-		
+
 		for (NSInteger i = 0; i < numberOfSections; i++) {
 
-			CGFloat gray[4] = {0.4f, 0.4f, 0.4f, 0.9f};
+			CGFloat subMeasure = (mainMeasure / 5) - 1;
+			CGFloat xxPosition = (xPosition + subMeasure) - mainMeasure;
+
+			for (NSInteger j = 0; j < subMeasure; j++) {
+
+				CGContextSetStrokeColor(context, gray);
+				CGContextBeginPath(context);
+				CGContextMoveToPoint(context, xxPosition, 0.0f);
+				CGContextAddLineToPoint(context, xxPosition, 8.0f);
+				CGContextStrokePath(context);
+				
+				xxPosition += subMeasure;
+			}
+
 			CGContextSetStrokeColor(context, gray);
 			CGContextBeginPath(context);
-			
 			CGContextMoveToPoint(context, xPosition, 0.0f);
-			CGContextAddLineToPoint(context, xPosition, 15.0f);
-			
+			CGContextAddLineToPoint(context, xPosition, 16.0f);
 			CGContextStrokePath(context);
-			
+
 			xPosition += mainMeasure;
 		}
 	}
 
 	else {
 
+		numberOfSections = (self.frame.size.height / mainMeasure) + 1;
+		CGFloat yPosition = mainMeasure;
 		CGContextRef context = UIGraphicsGetCurrentContext();
-		
-		//Draw Lines
-		CGFloat purple[4] = {0.4f, 0.4f, 0.4f, 0.4f};
-		CGContextSetStrokeColor(context, purple);
-		CGContextBeginPath(context);
-		
-		CGContextMoveToPoint(context, 50.0f, 0.0f);
-		CGContextAddLineToPoint(context, 50.0f, 200.0f);
-		
-		CGContextStrokePath(context);
+
+		for (NSInteger i = 0; i < numberOfSections; i++) {
+
+			CGFloat subMeasure = (mainMeasure / 5) - 1;
+			CGFloat yyPosition = (yPosition + subMeasure) - mainMeasure;
+			
+			for (NSInteger j = 0; j < subMeasure; j++) {
+				
+				CGContextSetStrokeColor(context, gray);
+				CGContextBeginPath(context);
+				CGContextMoveToPoint(context, 0.0f, yyPosition);
+				CGContextAddLineToPoint(context, 8.0f, yyPosition);
+				CGContextStrokePath(context);
+				
+				yyPosition += subMeasure;
+			}
+			
+			CGContextSetStrokeColor(context, gray);
+			CGContextBeginPath(context);
+			CGContextMoveToPoint(context, 0.0f, yPosition);
+			CGContextAddLineToPoint(context, 15.0f, yPosition);
+			CGContextStrokePath(context);
+
+			yPosition += mainMeasure;
+		}
 	}
 }
 

@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RKURulerView : UIView
+@interface RKURulerView : UIView {
 
-@property (unsafe_unretained) BOOL isLandscape;
+	BOOL isLandscape;
+}
+
+- (id)initWithFrame:(CGRect)frame andBool:(BOOL)isViewLandscape;
 
 @end
